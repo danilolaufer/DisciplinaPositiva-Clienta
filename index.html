@@ -22,9 +22,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <!-- Pon aquí el logo de la familia si quieres -->
-        <!-- <img src="assets/logo.png" alt="Logo Coaching Familiar"> -->
-        <span class="brand-mark">Educación Familiar</span>
+        <img src="./assets/img/logo (1).png" alt="logo disciplina positiva" width="80" >
       </div>
       <nav class="nav-links">
         <a href="#beneficios">Beneficios</a>
@@ -36,78 +34,114 @@
   </header>
 
   <!-- HERO + FORMULARIO -->
-  <div class="hero-form-card" id="form-contacto">
-  <h2>Agenda tu acompañamiento familiar</h2>
-  <p class="hero-form-text">
-    Cuéntame brevemente tu situación y te escribiré para coordinar
-    una primera llamada de valoración sin compromiso.
-  </p>
+  <div class="fondo">
+  <div class="container hero-grid">
+    
+    <!-- COLUMNA IZQUIERDA: TEXTO EMOCIONAL -->
+    <div class="hero-text">
+      <p class="hero-tagline">Disciplina positiva y acompañamiento familiar</p>
+      <h1>¿Terminas el día pidiendo perdón a tus hijos por haber perdido la paciencia?</h1>
+      <p class="hero-subtitle">
+        No estás sola. Te acompaño a transformar los gritos en diálogo, los castigos en límites claros
+        y la culpa en calma, para que vuelvas a disfrutar de tu familia sin sentirte desbordada.
+      </p>
 
-  <form id="contactForm">
-    <div class="field-group">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" required />
+      <ul class="hero-bullets">
+        <li><i class="fa-solid fa-check"></i> Herramientas prácticas para el día a día.</li>
+        <li><i class="fa-solid fa-check"></i> Acompañamiento respetuoso y con valores.</li>
+        <li><i class="fa-solid fa-check"></i> Sesiones online para adaptarnos a tu ritmo.</li>
+      </ul>
+
+      <div class="hero-ctas">
+        <a href="#form-contacto" class="btn-primary">
+          Quiero recuperar la calma en casa
+        </a>
+        <a
+          href="https://wa.me/5491112345678?text=Hola%2C%20vengo%20de%20tu%20web%20y%20quiero%20agendar%20una%20cita%20de%20acompa%C3%B1amiento%20familiar."
+          target="_blank"
+          class="btn-outline"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Agenda tu cita por WhatsApp
+        </a>
+      </div>
     </div>
 
-    <div class="field-group">
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+    <!-- COLUMNA DERECHA: FORMULARIO -->
+    <div class="hero-form-card" id="form-contacto">
+      <h2>Agenda tu acompañamiento familiar</h2>
+      <p class="hero-form-text">
+        Cuéntame brevemente tu situación y te escribiré para coordinar
+        una primera llamada de valoración sin compromiso.
+      </p>
+
+      <form id="contactForm">
+        <div class="field-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" required />
+        </div>
+
+        <div class="field-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+        </div>
+
+        <div class="field-group">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required />
+        </div>
+
+        <div class="field-group">
+          <label for="motivo">¿Qué te preocupa más en este momento?</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="comunicacion">
+              Discusiones constantes y mala comunicación en casa
+            </option>
+            <option value="crianza">
+              No sé cómo poner límites sin gritar
+            </option>
+            <option value="pareja">
+              Diferencias en la manera de educar con mi pareja
+            </option>
+            <option value="otro">
+              Otro (lo explico en el mensaje)
+            </option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="mensaje">Cuéntame brevemente tu situación</label>
+          <textarea id="mensaje" name="mensaje" rows="3"
+            placeholder="Ej: Siento que en casa vivimos a la defensiva, quiero aprender a comunicarme mejor con mis hijos..."
+            required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">
+          Quiero que me contactes
+        </button>
+
+        <p class="form-note">
+          Respondo personalmente cada mensaje en menos de 24 horas.
+        </p>
+        <p class="mensaje-exito" id="mensajeExito"></p>
+      </form>
+
+      <div class="hero-whatsapp-cta">
+        <p>¿Prefieres escribir directamente?</p>
+        <a
+          href="https://wa.me/5491112345678?text=Hola%2C%20vengo%20de%20tu%20web%20y%20quiero%20agendar%20una%20cita%20de%20acompa%C3%B1amiento%20familiar."
+          target="_blank"
+          class="btn-outline"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Agenda tu cita ahora por WhatsApp
+        </a>
+      </div>
     </div>
 
-    <div class="field-group">
-      <label for="telefono">Teléfono / WhatsApp</label>
-      <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required />
-    </div>
-
-    <div class="field-group">
-      <label for="motivo">¿Qué te preocupa más en este momento?</label>
-      <select id="motivo" name="motivo" required>
-        <option value="">Selecciona una opción</option>
-        <option value="comunicacion">
-          Discusiones constantes y mala comunicación en casa
-        </option>
-        <option value="crianza">
-          No sé cómo poner límites sin gritar
-        </option>
-        <option value="pareja">
-          Diferencias en la manera de educar con mi pareja
-        </option>
-        <option value="otro">
-          Otro (lo explico en el mensaje)
-        </option>
-      </select>
-    </div>
-
-    <div class="field-group">
-      <label for="mensaje">Cuéntame brevemente tu situación</label>
-      <textarea id="mensaje" name="mensaje" rows="3"
-        placeholder="Ej: Siento que en casa vivimos a la defensiva, quiero aprender a comunicarme mejor con mis hijos..."
-        required></textarea>
-    </div>
-
-    <button type="submit" class="btn-primary full-width">
-      Quiero que me contactes
-    </button>
-
-    <p class="form-note">
-      Respondo personalmente cada mensaje en menos de 24 horas.
-    </p>
-    <p class="mensaje-exito" id="mensajeExito"></p>
-  </form>
-
-  <div class="hero-whatsapp-cta">
-    <p>¿Prefieres escribir directamente?</p>
-    <a
-      href="https://wa.me/5491112345678?text=Hola%2C%20vengo%20de%20tu%20web%20y%20quiero%20agendar%20una%20cita%20de%20acompa%C3%B1amiento%20familiar."
-      target="_blank"
-      class="btn-outline"
-    >
-      <i class="fa-brands fa-whatsapp"></i>
-       Agenda tu cita ahora por WhatsApp
-    </a>
   </div>
 </div>
-
 
   <!-- MINI CTA -->
   <section class="strip-cta reveal">
