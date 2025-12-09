@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching Familiar | Educación y Acompañamiento</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos (para WhatsApp y detalles) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <!-- Pon aquí el logo de la familia si quieres -->
+        <!-- <img src="assets/logo.png" alt="Logo Coaching Familiar"> -->
+        <span class="brand-mark">Educación Familiar</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO + FORMULARIO -->
+  <div class="hero-form-card" id="form-contacto">
+  <h2>Agenda tu acompañamiento familiar</h2>
+  <p class="hero-form-text">
+    Cuéntame brevemente tu situación y te escribiré para coordinar
+    una primera llamada de valoración sin compromiso.
+  </p>
+
+  <form id="contactForm">
+    <div class="field-group">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. María López" required />
+    </div>
+
+    <div class="field-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+    </div>
+
+    <div class="field-group">
+      <label for="telefono">Teléfono / WhatsApp</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required />
+    </div>
+
+    <div class="field-group">
+      <label for="motivo">¿Qué te preocupa más en este momento?</label>
+      <select id="motivo" name="motivo" required>
+        <option value="">Selecciona una opción</option>
+        <option value="comunicacion">
+          Discusiones constantes y mala comunicación en casa
+        </option>
+        <option value="crianza">
+          No sé cómo poner límites sin gritar
+        </option>
+        <option value="pareja">
+          Diferencias en la manera de educar con mi pareja
+        </option>
+        <option value="otro">
+          Otro (lo explico en el mensaje)
+        </option>
+      </select>
+    </div>
+
+    <div class="field-group">
+      <label for="mensaje">Cuéntame brevemente tu situación</label>
+      <textarea id="mensaje" name="mensaje" rows="3"
+        placeholder="Ej: Siento que en casa vivimos a la defensiva, quiero aprender a comunicarme mejor con mis hijos..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary full-width">
+      Quiero que me contactes
+    </button>
+
+    <p class="form-note">
+      Respondo personalmente cada mensaje en menos de 24 horas.
+    </p>
+    <p class="mensaje-exito" id="mensajeExito"></p>
+  </form>
+
+  <div class="hero-whatsapp-cta">
+    <p>¿Prefieres escribir directamente?</p>
+    <a
+      href="https://wa.me/5491112345678?text=Hola%2C%20vengo%20de%20tu%20web%20y%20quiero%20agendar%20una%20cita%20de%20acompa%C3%B1amiento%20familiar."
+      target="_blank"
+      class="btn-outline"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+       Agenda tu cita ahora por WhatsApp
+    </a>
+  </div>
+</div>
+
+
+  <!-- MINI CTA -->
+  <section class="strip-cta reveal">
+    <div class="container strip-cta-inner">
+      <p>¿Sientes que tu hogar vive en piloto automático?</p>
+      <a href="#form-contacto" class="btn-light">
+        Da el primer paso hacia una familia más unida
+      </a>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+      <p class="section-subtitle">
+        Acompaño a familias que desean crecer, sanar y educar desde el amor y el respeto.
+      </p>
+
+      <div class="grid-3 beneficios-grid">
+        <div class="card beneficio reveal">
+          <h3>Comunicación sana</h3>
+          <p>Aprende a expresar lo que sientes sin herir y a escuchar de forma empática.</p>
+        </div>
+        <div class="card beneficio reveal">
+          <h3>Crianza consciente</h3>
+          <p>Herramientas concretas para poner límites claros y afectivos a tus hijos.</p>
+        </div>
+        <div class="card beneficio reveal">
+          <h3>Resolución de conflictos</h3>
+          <p>Estrategias para bajar tensiones y construir acuerdos en el hogar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="section alt" id="sobre-mi">
+    <div class="container sobre-grid">
+      <div class="sobre-text reveal">
+        <h2 class="section-title">Sobre mí</h2>
+        <p>
+          Soy <strong>[Nombre de la coach]</strong>, educadora y coach familiar con más de
+          X años acompañando familias que desean vivir con más armonía, coherencia y fe.
+        </p>
+        <p>
+          Desde una mirada integral de la persona y la familia, trabajo con herramientas
+          de comunicación, educación emocional y principios de vida cristianos, respetando
+          siempre el ritmo y la historia de cada hogar.
+        </p>
+        <p>
+          Mi misión es ayudarte a convertir tu casa en un espacio de encuentro, cuidado
+          y crecimiento mutuo.
+        </p>
+      </div>
+      <div class="sobre-image reveal">
+        <!-- Reemplaza por foto real -->
+        <div class="sobre-placeholder">
+          <span>Foto de la coach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI CTA 2 -->
+  <section class="strip-cta strip-cta-alt reveal">
+    <div class="container strip-cta-inner">
+      <p>Las pequeñas conversaciones de hoy construyen las grandes relaciones de mañana.</p>
+      <a href="#form-contacto" class="btn-outline-white">
+        Agenda una llamada de 20 minutos
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-subtitle">
+        Elige el formato que mejor se adapta a la realidad de tu familia.
+      </p>
+
+      <div class="grid-3 servicios-grid">
+        <div class="card serv-card reveal">
+          <h3>Sesiones familiares</h3>
+          <p>
+            Espacio para padres e hijos, donde trabajamos juntos la comunicación y los acuerdos del hogar.
+          </p>
+        </div>
+        <div class="card serv-card reveal">
+          <h3>Sesiones individuales</h3>
+          <p>
+            Acompañamiento personal para madres, padres o adolescentes que necesitan claridad y guía.
+          </p>
+        </div>
+        <div class="card serv-card reveal">
+          <h3>Talleres y encuentros</h3>
+          <p>
+            Propuestas grupales para comunidades, colegios o parroquias sobre familia y educación.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section alt" id="testimonios">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <p class="section-subtitle">
+        Algunas familias que ya han vivido el acompañamiento.
+      </p>
+
+      <div class="grid-3 testimonios-grid">
+        <div class="card test-card reveal">
+          <p class="test-text">
+            “Aprendimos a escucharnos sin gritos y a poner límites claros. Hoy en casa se respira paz.”
+          </p>
+          <p class="test-name">María y Javier</p>
+        </div>
+        <div class="card test-card reveal">
+          <p class="test-text">
+            “Nos dio herramientas concretas para el día a día con nuestros hijos. Nos sentimos acompañados.”
+          </p>
+          <p class="test-name">Familia R.</p>
+        </div>
+        <div class="card test-card reveal">
+          <p class="test-text">
+            “Pude ordenar mis ideas y tomar decisiones importantes desde la calma y la fe.”
+          </p>
+          <p class="test-name">Ana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            ¿Las sesiones son online o presenciales?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Trabajo de forma online y, según la ciudad, también de forma presencial.
+              En el formulario puedes indicar tu ubicación y vemos la mejor opción.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            ¿Necesitamos venir toda la familia?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No es obligatorio. Muchas veces comenzamos con uno de los padres y,
+              cuando están listos, se suman otros miembros de la familia.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            ¿Cuánto dura un proceso de acompañamiento?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Depende de cada caso. En la primera llamada de valoración vemos tu situación
+              y te propongo un plan aproximado y adaptado a tu realidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-final">
+    <div class="container cta-final-inner reveal">
+      <h2>Empecemos a cuidar lo más importante: tu familia.</h2>
+      <p>
+        Rellena el formulario o escríbeme por WhatsApp y coordinamos tu primera sesión.
+      </p>
+      <div class="cta-final-buttons">
+        <a href="#form-contacto" class="btn-primary">Quiero agendar una sesión</a>
+        <a href="https://wa.me/5491112345678?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20coaching%20familiar."
+           target="_blank"
+           class="btn-outline">
+          Escribirme por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Educación y Coaching Familiar. Todos los derechos reservados.</p>
+      <p class="footer-small">
+        Puedes adaptar este texto para políticas de privacidad, aviso legal, etc.
+      </p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5491112345678?text=Hola%2C%20vengo%20de%20tu%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank"
+     class="whatsapp-float"
+     aria-label="Escríbeme por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
